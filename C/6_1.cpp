@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-  int n; // nÎªÏ¸¾úµÄÊýÁ¿
-  // id¼ÇÂ¼Ï¸¾úµÄ±àºÅ, rate¼ÇÂ¼Ï¸¾úµÄ·±Ö³ÂÊ£¬µÚi¸öÏ¸¾ú¶ÔÓ¦id[i]ºÍrate[i]
+  int n; 
   int id[100];
   double rate[100];
 
@@ -12,8 +11,6 @@ int main() {
     cin >> id[i] >> initial >> final;
     rate[i] = (double)final / initial;
   }  
-
-// ¶ÔÕû¸öÏ¸¾úÅÅÐò
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n - i - 1; j++) {
       if (rate[j + 1] > rate[j]) {
@@ -27,9 +24,9 @@ int main() {
     }
   }  
 
-// ¼ÇÂ¼×î´óµÄ²î
+// ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ä²ï¿½
   double maxDiff = 0;
-  // ºÍ×î´ó²îµÄÏÂ±ê
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½
   int maxDiffIndex = 0;
   for (int i = 0; i < n - 1; i++) {
     double diff = rate[i] - rate[i + 1];
@@ -39,13 +36,13 @@ int main() {
     }  
   }
   
-  //Êä³ö·±Ö³ÂÊ½Ï´óµÄÄÇ×éÏ¸¾ú
+  //ï¿½ï¿½ï¿½ï¿½ï¿½Ö³ï¿½Ê½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½
   cout << maxDiffIndex + 1 << endl;
   for (int i = maxDiffIndex; i >= 0; i--) {
     cout << id[i] << endl;
   }
 
-  //Êä³ö·±Ö³ÂÊ½ÏÐ¡µÄÄÇ×éÏ¸¾ú
+  //ï¿½ï¿½ï¿½ï¿½ï¿½Ö³ï¿½Ê½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½
   cout << n - maxDiffIndex - 1 << endl;
   for (int i = n - 1; i >= maxDiffIndex + 1; i--) {
     cout << id[i] << endl;
