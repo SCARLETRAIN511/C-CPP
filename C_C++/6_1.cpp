@@ -24,9 +24,7 @@ int main() {
     }
   }  
 
-// ��¼���Ĳ�
   double maxDiff = 0;
-  // ��������±�
   int maxDiffIndex = 0;
   for (int i = 0; i < n - 1; i++) {
     double diff = rate[i] - rate[i + 1];
@@ -35,14 +33,11 @@ int main() {
       maxDiffIndex = i;
     }  
   }
-  
-  //�����ֳ�ʽϴ������ϸ��
   cout << maxDiffIndex + 1 << endl;
   for (int i = maxDiffIndex; i >= 0; i--) {
     cout << id[i] << endl;
   }
 
-  //�����ֳ�ʽ�С������ϸ��
   cout << n - maxDiffIndex - 1 << endl;
   for (int i = n - 1; i >= maxDiffIndex + 1; i--) {
     cout << id[i] << endl;
