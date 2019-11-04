@@ -1,11 +1,7 @@
 #include <stdio.h>
 int main(){
     const int number=10;
-    int count[number];
-    for (int i = 0; i < number; i++)
-    {
-        count[i]=0;
-    }
+    int count[number]={0};
     int x=0;
     while (x!=-1)
     {
