@@ -21,11 +21,11 @@ int main(){
     int a[]={1,2,3,4,5,6,7};
     int *p3=&a[4];
     int *plist=a;
-    printf("*plist=%d\n",*plist); printf("plist[1]=%d\n",plist[0]);
+    printf("*plist=%d\n",*(plist+1)); printf("plist[1]=%d\n",plist[0]);
     
     printf("the pointer of a is %p\n",&a);printf("the pointer of plist=%p\n",plist);
     
-    printf("The value of p3 is %d \n",p3);  printf("the value of *p3=%d\n",*p3);
+    printf("The value of p3 is %d \n",p3[0]);  printf("the value of *p3=%d\n",*p3);
     return 0;
 }
 
