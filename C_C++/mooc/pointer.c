@@ -9,13 +9,14 @@ int main(){
     
     //Use the pointer to change the variable value.
     *p=26;
-    printf("i is %d",i);
+    printf("i is %d\n\n",i);
     
     //const test
     int num=25;
     const int *p2=&num;
     num=100;// even if the pointer is the constant, the original value can be changed.
-    printf("the value of *p is %d \n",*p2);
+    printf("the value of the pointer p is %p\n",p2);
+    printf("the value of *p is %d \n\n",*p2);
 
     //test the array
     int a[]={1,2,3,4,5,6,7};
@@ -23,9 +24,9 @@ int main(){
     int *plist=a;
     printf("*plist=%d\n",*(plist+1)); printf("plist[1]=%d\n",plist[0]);
     
-    printf("the pointer of a is %p\n",&a);printf("the pointer of plist=%p\n",plist);
+    printf("the pointer of a(&a) is %p\n",&a);printf("the pointer of plist(plist)=%p\n",plist);
     
-    printf("The value of p3 is %d \n",p3[0]);  printf("the value of *p3=%d\n",*p3);
+    printf("The value of p3[0] is %d \n",p3[0]);  printf("the value of *p3=%d\n",*p3);
     return 0;
 }
 
