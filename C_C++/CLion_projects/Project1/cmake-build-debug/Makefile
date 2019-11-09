@@ -38,38 +38,27 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\JETBRAINS_CLION\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\JETBRAINS_CLION\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1
+CMAKE_SOURCE_DIR = C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\Project1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\JETBRAINS_CLION\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\JETBRAINS_CLION\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -77,11 +66,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CLion_projects
+# Target rules for targets named Project1
 
 # Build rule for target.
-CLion_projects: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 CLion_projects
-.PHONY : CLion_projects
+Project1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Project1
+.PHONY : Project1
 
 # fast build rule for target.
-CLion_projects/fast:
-	$(MAKE) -f CMakeFiles\CLion_projects.dir\build.make CMakeFiles/CLion_projects.dir/build
-.PHONY : CLion_projects/fast
+Project1/fast:
+	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/build
+.PHONY : Project1/fast
 
 main.obj: main.c.obj
 
@@ -128,7 +128,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\CLion_projects.dir\build.make CMakeFiles/CLion_projects.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -137,7 +137,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\CLion_projects.dir\build.make CMakeFiles/CLion_projects.dir/main.c.i
+	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -146,7 +146,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\CLion_projects.dir\build.make CMakeFiles/CLion_projects.dir/main.c.s
+	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -155,9 +155,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... CLion_projects
-	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Project1
+	@echo ... edit_cache
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

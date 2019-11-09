@@ -2,10 +2,9 @@
 
 int main() {
     printf("Hello, World!\n");
-    printf("Type sth");
-    int x;
+    printf("types sth\n");
+    int  x;
     scanf("%d",&x);
-    printf("%d",x);
+    printf("the number you type is %d\n",x);
     return 0;
-
 }

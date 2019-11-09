@@ -1,4 +1,4 @@
-"D:\JETBRAINS_CLION\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1
+"C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\Project1
 -- The C compiler identification is GNU 8.1.0
 -- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/gcc.exe
 -- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/gcc.exe -- works
@@ -8,4 +8,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug
+-- Build files have been written to: C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug

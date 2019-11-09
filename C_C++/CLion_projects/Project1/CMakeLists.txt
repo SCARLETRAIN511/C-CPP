@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
-project(CLion_projects C)
+project(Project1 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(CLion_projects main.c)
+add_executable(Project1 main.c)
