@@ -149,6 +149,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/main.c.s
 .PHONY : main.c.s
 
+test1.obj: test1.c.obj
+
+.PHONY : test1.obj
+
+# target to build an object file
+test1.c.obj:
+	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/test1.c.obj
+.PHONY : test1.c.obj
+
+test1.i: test1.c.i
+
+.PHONY : test1.i
+
+# target to preprocess a source file
+test1.c.i:
+	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/test1.c.i
+.PHONY : test1.c.i
+
+test1.s: test1.c.s
+
+.PHONY : test1.s
+
+# target to generate assembly for a file
+test1.c.s:
+	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/test1.c.s
+.PHONY : test1.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,6 +188,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... test1.obj
+	@echo ... test1.i
+	@echo ... test1.s
 .PHONY : help
 
 

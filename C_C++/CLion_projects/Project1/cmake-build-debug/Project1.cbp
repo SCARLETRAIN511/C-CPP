@@ -77,6 +77,9 @@
 		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/main.c">
 			<Option target="Project1"/>
 		</Unit>
+		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/test1.c">
+			<Option target="Project1"/>
+		</Unit>
 		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
