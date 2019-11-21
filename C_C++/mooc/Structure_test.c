@@ -12,6 +12,8 @@ int main(){
     today.month=11;
     today.year=2019;
     formStructure();
+    struct date *ptoday=&today;
+    printf("The point of day is %p\n",ptoday);
     printf("today is %i year month %i  and day %i\n",today.year,today.month,today.day);
     return 0;
 }
