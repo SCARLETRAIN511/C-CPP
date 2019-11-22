@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
+				<Option working_dir="C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
+				<Option working_dir="C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project1">
-				<Option output="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Project1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
+				<Option output="C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Project1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -39,15 +39,15 @@
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project1/fast">
-				<Option output="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Project1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
+				<Option output="C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Project1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -57,30 +57,27 @@
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1/fast"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
+				<Option working_dir="C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/main.c">
+		<Unit filename="C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/main.c">
 			<Option target="Project1"/>
 		</Unit>
-		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/test1.c">
-			<Option target="Project1"/>
-		</Unit>
-		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/Project1/CMakeLists.txt">
+		<Unit filename="C:/Users/tangj/Desktop/Coding/C-C-/C_C++/CLion_projects/Project1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

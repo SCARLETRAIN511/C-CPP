@@ -43,21 +43,21 @@ RM = "D:\JETBRAINS_CLION\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1
+CMAKE_SOURCE_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Project1.dir/all
+all: CMakeFiles/Complete1.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Project1.dir/clean
+clean: CMakeFiles/Complete1.dir/clean
 
 .PHONY : clean
 
@@ -67,31 +67,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/Project1.dir
+# Target rules for target CMakeFiles/Complete1.dir
 
 # All Build rule for target.
-CMakeFiles/Project1.dir/all:
-	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/depend
-	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Project1"
-.PHONY : CMakeFiles/Project1.dir/all
+CMakeFiles/Complete1.dir/all:
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/depend
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target Complete1"
+.PHONY : CMakeFiles/Complete1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Project1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Project1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/Project1.dir/rule
+CMakeFiles/Complete1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1\cmake-build-debug\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Complete1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Complete1.dir/rule
 
 # Convenience name for target.
-Project1: CMakeFiles/Project1.dir/rule
+Complete1: CMakeFiles/Complete1.dir/rule
 
-.PHONY : Project1
+.PHONY : Complete1
 
 # clean rule for target.
-CMakeFiles/Project1.dir/clean:
-	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/clean
-.PHONY : CMakeFiles/Project1.dir/clean
+CMakeFiles/Complete1.dir/clean:
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/clean
+.PHONY : CMakeFiles/Complete1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

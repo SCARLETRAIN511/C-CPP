@@ -47,24 +47,13 @@ RM = "D:\JETBRAINS_CLION\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1
+CMAKE_SOURCE_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\JETBRAINS_CLION\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,11 +66,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"D:\JETBRAINS_CLION\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1\cmake-build-debug\CMakeFiles C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\CLion_projects\Project1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\Coding\C-C-\C_C++\Complete1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Project1
+# Target rules for targets named Complete1
 
 # Build rule for target.
-Project1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Project1
-.PHONY : Project1
+Complete1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Complete1
+.PHONY : Complete1
 
 # fast build rule for target.
-Project1/fast:
-	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/build
-.PHONY : Project1/fast
+Complete1/fast:
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/build
+.PHONY : Complete1/fast
 
 main.obj: main.c.obj
 
@@ -128,7 +128,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -137,7 +137,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/main.c.i
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -146,8 +146,62 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\Project1.dir\build.make CMakeFiles/Project1.dir/main.c.s
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/main.c.s
 .PHONY : main.c.s
+
+max.obj: max.c.obj
+
+.PHONY : max.obj
+
+# target to build an object file
+max.c.obj:
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/max.c.obj
+.PHONY : max.c.obj
+
+max.i: max.c.i
+
+.PHONY : max.i
+
+# target to preprocess a source file
+max.c.i:
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/max.c.i
+.PHONY : max.c.i
+
+max.s: max.c.s
+
+.PHONY : max.s
+
+# target to generate assembly for a file
+max.c.s:
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/max.c.s
+.PHONY : max.c.s
+
+min.obj: min.c.obj
+
+.PHONY : min.obj
+
+# target to build an object file
+min.c.obj:
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/min.c.obj
+.PHONY : min.c.obj
+
+min.i: min.c.i
+
+.PHONY : min.i
+
+# target to preprocess a source file
+min.c.i:
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/min.c.i
+.PHONY : min.c.i
+
+min.s: min.c.s
+
+.PHONY : min.s
+
+# target to generate assembly for a file
+min.c.s:
+	$(MAKE) -f CMakeFiles\Complete1.dir\build.make CMakeFiles/Complete1.dir/min.c.s
+.PHONY : min.c.s
 
 # Help Target
 help:
@@ -155,12 +209,18 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... Project1
+	@echo ... Complete1
 	@echo ... edit_cache
+	@echo ... rebuild_cache
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... max.obj
+	@echo ... max.i
+	@echo ... max.s
+	@echo ... min.obj
+	@echo ... min.i
+	@echo ... min.s
 .PHONY : help
 
 
