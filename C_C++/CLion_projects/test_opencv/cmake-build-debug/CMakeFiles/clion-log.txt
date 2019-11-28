@@ -1,4 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=C:/Users/tangj/vcpkg/scripts/buildsystems/vcpkg.cmake -G "CodeBlocks - NMake Makefiles" C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\test_opencv
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/test_opencv/cmake-build-debug
