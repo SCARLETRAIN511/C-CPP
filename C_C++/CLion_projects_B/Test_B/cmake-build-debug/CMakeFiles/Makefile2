@@ -43,10 +43,10 @@ RM = "D:\Clion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\untitled
+CMAKE_SOURCE_DIR = C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects_B\Test_B
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\untitled\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects_B\Test_B\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -73,14 +73,14 @@ preinstall:
 CMakeFiles/test_cv.dir/all:
 	$(MAKE) -f CMakeFiles\test_cv.dir\build.make CMakeFiles/test_cv.dir/depend
 	$(MAKE) -f CMakeFiles\test_cv.dir\build.make CMakeFiles/test_cv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\untitled\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target test_cv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects_B\Test_B\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target test_cv"
 .PHONY : CMakeFiles/test_cv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_cv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\untitled\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects_B\Test_B\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/test_cv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects\untitled\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tangj\Desktop\coding\C-C-\C_C++\CLion_projects_B\Test_B\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/test_cv.dir/rule
 
 # Convenience name for target.
