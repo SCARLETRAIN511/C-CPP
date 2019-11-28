@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/test_opencv
+# Install script for directory: C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_S/test_opencv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/test_opencv/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_S/test_opencv/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
