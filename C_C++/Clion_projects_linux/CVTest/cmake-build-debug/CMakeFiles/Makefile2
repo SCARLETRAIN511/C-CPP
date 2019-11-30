@@ -44,10 +44,10 @@ RM = /snap/clion/97/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest
+CMAKE_SOURCE_DIR = /home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ preinstall:
 CMakeFiles/CVTest.dir/all:
 	$(MAKE) -f CMakeFiles/CVTest.dir/build.make CMakeFiles/CVTest.dir/depend
 	$(MAKE) -f CMakeFiles/CVTest.dir/build.make CMakeFiles/CVTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target CVTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target CVTest"
 .PHONY : CMakeFiles/CVTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CVTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CVTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/CVTest.dir/rule
 
 # Convenience name for target.

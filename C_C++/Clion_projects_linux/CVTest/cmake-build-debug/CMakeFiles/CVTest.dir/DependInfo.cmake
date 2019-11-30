@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest/main.cpp" "/home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/CMakeFiles/CVTest.dir/main.cpp.o"
+  "/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest/main.cpp" "/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/CMakeFiles/CVTest.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

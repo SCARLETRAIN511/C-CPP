@@ -1,4 +1,4 @@
-/snap/clion/97/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest
+/snap/clion/97/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest
 -- The C compiler identification is GNU 7.4.0
 -- The CXX compiler identification is GNU 7.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -20,4 +20,4 @@
 --     include path: /usr/local/include/opencv4
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug
+-- Build files have been written to: /home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug

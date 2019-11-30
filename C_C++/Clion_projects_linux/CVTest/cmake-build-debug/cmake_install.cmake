@@ -1,4 +1,4 @@
-# Install script for directory: /home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest
+# Install script for directory: /home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jt2418/桌面/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/CVTest/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
