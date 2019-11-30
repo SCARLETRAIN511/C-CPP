@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -g   CMakeFiles/Test_B.dir/main.cpp.o  -o Test_B -Wl,-rpath,/usr/local/lib /usr/local/lib/libopencv_highgui.so.4.1.2 /usr/local/lib/libopencv_videoio.so.4.1.2 /usr/local/lib/libopencv_imgcodecs.so.4.1.2 /usr/local/lib/libopencv_imgproc.so.4.1.2 /usr/local/lib/libopencv_core.so.4.1.2 
