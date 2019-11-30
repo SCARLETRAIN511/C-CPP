@@ -1,0 +1,3 @@
+C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/OCR/cmake-build-debug/CMakeFiles/OCR.dir
+C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/OCR/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/OCR/cmake-build-debug/CMakeFiles/rebuild_cache.dir
