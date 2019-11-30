@@ -1,0 +1,3 @@
+/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/opencv_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/opencv_test/cmake-build-debug/CMakeFiles/opencv_test.dir
+/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/opencv_test/cmake-build-debug/CMakeFiles/edit_cache.dir
