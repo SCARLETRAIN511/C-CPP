@@ -5,137 +5,104 @@
 		<Option title="assigment"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\opencv\;CMake Files\opencv\mingw-build\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug"/>
+				<Option working_dir="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Test_B">
-				<Option output="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Test_B.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/opencv/mingw-build"/>
-					<Add directory="D:/opencv/sources/include"/>
-					<Add directory="D:/opencv/sources/include/opencv"/>
-					<Add directory="D:/opencv/sources/modules/core/include"/>
-					<Add directory="D:/opencv/sources/modules/flann/include"/>
-					<Add directory="D:/opencv/sources/modules/imgproc/include"/>
-					<Add directory="D:/opencv/sources/modules/ml/include"/>
-					<Add directory="D:/opencv/sources/modules/photo/include"/>
-					<Add directory="D:/opencv/sources/modules/video/include"/>
-					<Add directory="D:/opencv/sources/modules/imgcodecs/include"/>
-					<Add directory="D:/opencv/sources/modules/shape/include"/>
-					<Add directory="D:/opencv/sources/modules/videoio/include"/>
-					<Add directory="D:/opencv/sources/modules/highgui/include"/>
-					<Add directory="D:/opencv/sources/modules/objdetect/include"/>
-					<Add directory="D:/opencv/sources/modules/superres/include"/>
-					<Add directory="D:/opencv/sources/modules/ts/include"/>
-					<Add directory="D:/opencv/sources/modules/features2d/include"/>
-					<Add directory="D:/opencv/sources/modules/calib3d/include"/>
-					<Add directory="D:/opencv/sources/modules/stitching/include"/>
-					<Add directory="D:/opencv/sources/modules/videostab/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test_B"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Test_B/fast">
-				<Option output="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Test_B.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/opencv/mingw-build"/>
-					<Add directory="D:/opencv/sources/include"/>
-					<Add directory="D:/opencv/sources/include/opencv"/>
-					<Add directory="D:/opencv/sources/modules/core/include"/>
-					<Add directory="D:/opencv/sources/modules/flann/include"/>
-					<Add directory="D:/opencv/sources/modules/imgproc/include"/>
-					<Add directory="D:/opencv/sources/modules/ml/include"/>
-					<Add directory="D:/opencv/sources/modules/photo/include"/>
-					<Add directory="D:/opencv/sources/modules/video/include"/>
-					<Add directory="D:/opencv/sources/modules/imgcodecs/include"/>
-					<Add directory="D:/opencv/sources/modules/shape/include"/>
-					<Add directory="D:/opencv/sources/modules/videoio/include"/>
-					<Add directory="D:/opencv/sources/modules/highgui/include"/>
-					<Add directory="D:/opencv/sources/modules/objdetect/include"/>
-					<Add directory="D:/opencv/sources/modules/superres/include"/>
-					<Add directory="D:/opencv/sources/modules/ts/include"/>
-					<Add directory="D:/opencv/sources/modules/features2d/include"/>
-					<Add directory="D:/opencv/sources/modules/calib3d/include"/>
-					<Add directory="D:/opencv/sources/modules/stitching/include"/>
-					<Add directory="D:/opencv/sources/modules/videostab/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test_B/fast"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug"/>
+				<Option working_dir="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test_B">
+				<Option output="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Test_B" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test_B"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test_B/fast">
+				<Option output="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Test_B" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test_B/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/main.cpp">
+		<Unit filename="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/main.cpp">
 			<Option target="Test_B"/>
 		</Unit>
-		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/CMakeLists.txt">
+		<Unit filename="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/opencv/mingw-build/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\opencv\mingw-build\"/>
+		<Unit filename="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/../../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/opencv/mingw-build/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\opencv\mingw-build\"/>
+		<Unit filename="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/../../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/opencv/mingw-build/OpenCVModules.cmake">
-			<Option virtualFolder="CMake Files\opencv\mingw-build\"/>
+		<Unit filename="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/../../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/../../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

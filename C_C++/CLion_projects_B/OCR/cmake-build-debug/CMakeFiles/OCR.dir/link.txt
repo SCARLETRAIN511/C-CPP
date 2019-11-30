@@ -1,3 +1,0 @@
-"D:\Clion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\OCR.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\OCR.dir/objects.a @CMakeFiles\OCR.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  -std=c++14 -g   -Wl,--whole-archive CMakeFiles\OCR.dir/objects.a -Wl,--no-whole-archive  -o OCR.exe -Wl,--out-implib,libOCR.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\OCR.dir\linklibs.rsp

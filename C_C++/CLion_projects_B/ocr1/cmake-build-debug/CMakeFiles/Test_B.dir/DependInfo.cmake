@@ -4,32 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/main.cpp" "C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/TestB/cmake-build-debug/CMakeFiles/Test_B.dir/main.cpp.obj"
+  "/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/main.cpp" "/home/jt2418/桌面/coding/C-C-/C_C++/CLion_projects_B/ocr1/cmake-build-debug/CMakeFiles/Test_B.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "D:/opencv/mingw-build"
-  "D:/opencv/sources/include"
-  "D:/opencv/sources/include/opencv"
-  "D:/opencv/sources/modules/core/include"
-  "D:/opencv/sources/modules/flann/include"
-  "D:/opencv/sources/modules/imgproc/include"
-  "D:/opencv/sources/modules/ml/include"
-  "D:/opencv/sources/modules/photo/include"
-  "D:/opencv/sources/modules/video/include"
-  "D:/opencv/sources/modules/imgcodecs/include"
-  "D:/opencv/sources/modules/shape/include"
-  "D:/opencv/sources/modules/videoio/include"
-  "D:/opencv/sources/modules/highgui/include"
-  "D:/opencv/sources/modules/objdetect/include"
-  "D:/opencv/sources/modules/superres/include"
-  "D:/opencv/sources/modules/ts/include"
-  "D:/opencv/sources/modules/features2d/include"
-  "D:/opencv/sources/modules/calib3d/include"
-  "D:/opencv/sources/modules/stitching/include"
-  "D:/opencv/sources/modules/videostab/include"
+  "/usr/local/include/opencv4"
   )
 
 # Targets to which this target links.
