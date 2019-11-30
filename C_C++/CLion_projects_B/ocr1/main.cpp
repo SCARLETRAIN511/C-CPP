@@ -7,7 +7,6 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/ml/ml.hpp>
 #include <io.h>
-//查找文件相关函数
 
 
 using namespace std;
