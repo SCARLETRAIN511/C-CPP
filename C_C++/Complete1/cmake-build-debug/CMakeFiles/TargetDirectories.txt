@@ -1,3 +1,0 @@
-C:/Users/tangj/Desktop/Coding/C-C-/C_C++/Complete1/cmake-build-debug/CMakeFiles/Complete1.dir
-C:/Users/tangj/Desktop/Coding/C-C-/C_C++/Complete1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/tangj/Desktop/Coding/C-C-/C_C++/Complete1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
