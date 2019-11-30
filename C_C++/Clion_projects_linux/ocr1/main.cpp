@@ -8,7 +8,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/ml/ml.hpp>
 #include <sys/io.h>
-
+#include <opencv2/core/utility.hpp>
 
 using namespace std;
 using namespace cv;
@@ -42,10 +42,10 @@ int main()
     //////////////////////从指定文件夹下提取图片//////////////////
     for (int p = 0; p < classsum; p++)//依次提取0到9文件夹中的图片
     {
-        oss << "C:/Users/tangj/Desktop/mnist_train/";
+        oss << "/home/jt2418/桌面/coding/python_vs/mnist_train/";
         num += 1;//num从0到9
         int label = num;
-        oss << num << "/*.jpg";//图片名字后缀，oss可以结合数字与字符串
+        oss << num << "/*.png";//图片名字后缀，oss可以结合数字与字符串
         string pattern = oss.str();//oss.str()输出oss字符串，并且赋给pattern
         oss.str("");//每次循环后把oss字符串清空
         vector<Mat> input_images;
@@ -107,9 +107,9 @@ int main()
     //SVM_params->save("C:/Users/zhang/Desktop/opencv——实例/小案例/车牌检测/基于adaboost机器学习/字符识别svm.xml");
     cout << "训练好了！！！" << endl;
 
-
     ////===============================预测部分===============================////
-    Mat src = imread("C:/Users/tangj/Desktop/0.jpg");
+    Mat src = imread("/home/jt2418/桌面/test1.jpg");
+
     cvtColor(src, src, COLOR_BGR2GRAY);
     threshold(src, src, 0, 255, THRESH_OTSU);
     imshow("原图像", src);
@@ -119,6 +119,7 @@ int main()
     input.convertTo(input, CV_32FC1);//更改图片数据的类型，必要，不然会出错
 
     float r = SVM_params->predict(input);   //对所有行进行预测
+    cout << "the number is " << endl;
     cout << r << endl;
     waitKey(0);
     return 0;
