@@ -22,9 +22,8 @@ Mat yangben_thresh;
 
 int main()
 {
-    //核心思路：//获取一张图片后会将图片特征写入到容器中，
-    //紧接着会将标签写入另一个容器中，这样就保证了特征
-    //  和标签是一一对应的关系。
+    //GET THE image and set the feature into the classifier
+    //add the tag to the classifier
     ////===============================读取训练数据===============================////
     const int classsum = 10;//图片共有10类，可修改
     const int imagesSum = 500;//每类有张图片，可修改
@@ -40,14 +39,14 @@ int main()
     //最终的训练数据
     Mat traindata;
     //////////////////////从指定文件夹下提取图片//////////////////
-    for (int p = 0; p < classsum; p++)//依次提取0到9文件夹中的图片
+    for (int p = 0; p < classsum; p++)//get pictures from file 0-9
     {
         oss << "/home/jt2418/Desktop/coding/python_vs/mnist_train/";
         num += 1;//num从0到9
         int label = num;
-        oss << num << "/*.png";//图片名字后缀，oss可以结合数字与字符串
-        string pattern = oss.str();//oss.str()输出oss字符串，并且赋给pattern
-        oss.str("");//每次循环后把oss字符串清空
+        oss << num << "/*.png";//read the .png file
+        string pattern = oss.str();
+        oss.str("");
         vector<Mat> input_images;
         vector<String> input_images_name;
         glob(pattern, input_images_name, false);
@@ -66,24 +65,20 @@ int main()
             dealimage = input_images[i];
 
 
-            //注意：我们简单粗暴将整个图的所有像素作为了特征，因为我们关注更多的是整个的训练过程
-            //，所以选择了最简单的方式完成特征提取工作，除此中外，
-            //特征提取的方式有很多，比如LBP，HOG等等
-            //我们利用reshape()函数完成特征提取,
-            //eshape(1, 1)的结果就是原图像对应的矩阵将被拉伸成一个一行的向量，作为特征向量。
+            //Reshape to get the features in the picture
+            //eshape(1, 1) is a 1 dimension vector。
             dealimage = dealimage.reshape(1, 1);//图片序列化
             trainingData.push_back(dealimage);//序列化后的图片依次存入
             labels.push_back(label);//把每个图片对应的标签依次存入
         }
     }
-    //图片数据和标签转变下
-    Mat(trainingData).copyTo(traindata);//复制
-    traindata.convertTo(traindata, CV_32FC1);//更改图片数据的类型，必要，不然会出错
-    Mat(labels).copyTo(clas);//复制
+    Mat(trainingData).copyTo(traindata);//copy
+    traindata.convertTo(traindata, CV_32FC1);//change the pictures' file names
+    Mat(labels).copyTo(clas);
 
 
-    ////===============================创建SVM模型===============================////
-    // 创建分类器并设置参数
+    ////===============================Create the svm===============================////
+    // Set the classifier
     Ptr<SVM> SVM_params =SVM::create();
     SVM_params->setType(SVM::C_SVC);//C_SVC用于分类，C_SVR用于回归
     SVM_params->setKernel(SVM::LINEAR);  //LINEAR线性核函数。SIGMOID为高斯核函数
@@ -94,21 +89,23 @@ int main()
     SVM_params->setC(1);//SVM最优问题参数，设置C-SVC，EPS_SVR和NU_SVR的参数；
     SVM_params->setNu(0);//SVM最优问题参数，设置NU_SVC， ONE_CLASS 和NU_SVR的参数；
     SVM_params->setP(0);//SVM最优问题参数，设置EPS_SVR 中损失函数p的值.
-    //结束条件，即训练1000次或者误差小于0.01结束
+    //end the training
     SVM_params->setTermCriteria(TermCriteria(TermCriteria::MAX_ITER + TermCriteria::EPS, 1000, 0.01));
 
     //训练数据和标签的结合
     Ptr<TrainData> tData = TrainData::create(traindata, ROW_SAMPLE, clas);
 
-    // 训练分类器
-    SVM_params->train(tData);//训练
+    // train the classifier
+    SVM_params->train(tData);//train
+    cout << "<-----------------------Finish Training------------------------>" << endl;
 
-    //保存模型
-    //SVM_params->save("C:/Users/zhang/Desktop/opencv——实例/小案例/车牌检测/基于adaboost机器学习/字符识别svm.xml");
-    cout << "训练好了！！！" << endl;
-
-    ////===============================预测部分===============================////
-    Mat src = imread("/home/jt2418/Desktop/test1.png");
+    ////===============================Predict===============================////
+    cout<<"Input the file name on the desktop"<<endl;
+    string file_name;
+    string file_FullName;
+    cin >> file_name;
+    file_FullName = "/home/jt2418/Desktop/" + file_name;
+    Mat src = imread(file_FullName);
 
     cvtColor(src, src, COLOR_BGR2GRAY);
     threshold(src, src, 0, 255, THRESH_OTSU);
@@ -116,10 +113,10 @@ int main()
     Mat input;
     src = src.reshape(1, 1);//输入图片序列化
     input.push_back(src);
-    input.convertTo(input, CV_32FC1);//更改图片数据的类型，必要，不然会出错
+    input.convertTo(input, CV_32FC1);//change the data type
 
-    float r = SVM_params->predict(input);   //对所有行进行预测
-    cout << "the number is " << endl;
+    float r = SVM_params->predict(input);   //predict the number;
+    cout << "the number is ";
     cout << r << endl;
     waitKey(0);
     return 0;
