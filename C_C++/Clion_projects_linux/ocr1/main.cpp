@@ -42,7 +42,7 @@ int main()
     //////////////////////从指定文件夹下提取图片//////////////////
     for (int p = 0; p < classsum; p++)//依次提取0到9文件夹中的图片
     {
-        oss << "/home/jt2418/桌面/coding/python_vs/mnist_train/";
+        oss << "/home/jt2418/Desktop/coding/python_vs/mnist_train/";
         num += 1;//num从0到9
         int label = num;
         oss << num << "/*.png";//图片名字后缀，oss可以结合数字与字符串
@@ -108,7 +108,7 @@ int main()
     cout << "训练好了！！！" << endl;
 
     ////===============================预测部分===============================////
-    Mat src = imread("/home/jt2418/桌面/test1.jpg");
+    Mat src = imread("/home/jt2418/Desktop/test1.png");
 
     cvtColor(src, src, COLOR_BGR2GRAY);
     threshold(src, src, 0, 255, THRESH_OTSU);
