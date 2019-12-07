@@ -20,8 +20,7 @@ Mat src;
 Mat yangben_gray;
 Mat yangben_thresh;
 
-int main()
-{
+int main() {
     //GET THE image and set the feature into the classifier
     //add the tag to the classifier
     ////===============================读取训练数据===============================////
@@ -79,7 +78,7 @@ int main()
 
     ////===============================Create the svm===============================////
     // Set the classifier
-    Ptr<SVM> SVM_params =SVM::create();
+    Ptr<SVM> SVM_params = SVM::create();
     SVM_params->setType(SVM::C_SVC);//C_SVC用于分类，C_SVR用于回归
     SVM_params->setKernel(SVM::LINEAR);  //LINEAR线性核函数。SIGMOID为高斯核函数
 
@@ -100,24 +99,29 @@ int main()
     cout << "<-----------------------Finish Training------------------------>" << endl;
 
     ////===============================Predict===============================////
-    cout<<"Input the file name on the desktop"<<endl;
     string file_name;
     string file_FullName;
+    cout << "type any number to start" << endl;
     cin >> file_name;
-    file_FullName = "/home/jt2418/Desktop/" + file_name;
-    Mat src = imread(file_FullName);
+    while (file_name != "stop") {
+        cout << "Input the file name on the desktop" << endl;
 
-    cvtColor(src, src, COLOR_BGR2GRAY);
-    threshold(src, src, 0, 255, THRESH_OTSU);
-    imshow("原图像", src);
-    Mat input;
-    src = src.reshape(1, 1);//输入图片序列化
-    input.push_back(src);
-    input.convertTo(input, CV_32FC1);//change the data type
+        cin >> file_name;
+        file_FullName = "/home/jt2418/Desktop/" + file_name;
+        Mat src = imread(file_FullName);
+        cvtColor(src, src, COLOR_BGR2GRAY);
+        threshold(src, src, 0, 255, THRESH_OTSU);
+        imshow("Originl Picture", src);
+        Mat input;
+        src = src.reshape(1, 1);//输入图片序列化
+        input.push_back(src);
+        input.convertTo(input, CV_32FC1);//change the data type
 
-    float r = SVM_params->predict(input);   //predict the number;
-    cout << "the number is ";
-    cout << r << endl;
-    waitKey(0);
+        float r = SVM_params->predict(input);   //predict the number;
+        cout << "the number is ";
+        cout << r << endl;
+        cout << "----------------------------------Recognition completed, Next picture-------------------------------------\n" << endl;
+    }
     return 0;
+
 }
