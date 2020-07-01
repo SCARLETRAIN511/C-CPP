@@ -9,14 +9,9 @@ int main(){
 		while (x>0){
 			ans += x % 2;
 			x /= 2;
-			 
-		
-		
+
 		}
-		cout<<ans<<endl;
-		
-		
-		
+		cout<<ans<<endl;	
 	}
 	return 0;
 	
