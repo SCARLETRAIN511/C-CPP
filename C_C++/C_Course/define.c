@@ -3,7 +3,7 @@
 
 void main(){
     int x, add;
-
+    printf("Type the value of x: ");
     scanf("%d",&x); //pointer
     add = x + M;
     int a = 3;
