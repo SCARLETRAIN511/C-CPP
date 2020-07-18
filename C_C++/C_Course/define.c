@@ -4,6 +4,7 @@
 void main(){
     int x, add;
     printf("Type the value of x: ");
+    //使用变量的地址
     scanf("%d",&x); //pointer
     add = x + M;
     int a = 3;
@@ -16,6 +17,11 @@ void main(){
 
     int s=3,absa;
     absa = (s>0?s:-s); //this is actually if condition a>0 absa = a, vice versa
-    printf("absa is %d",absa);
+    printf("absa is %d\n",absa);
+
+    int num1,num2;
+    printf("Type 2 numbers here");
+    scanf("%d %d",&num1,&num2);
+    printf("%d,%d",num1,num2);
 
 }
