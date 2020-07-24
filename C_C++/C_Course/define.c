@@ -23,5 +23,8 @@ void main(){
     printf("Type 2 numbers here");
     scanf("%d %d",&num1,&num2);
     printf("%d,%d",num1,num2);
+    char charA;
+    charA = getchar();
+    printf("%s",charA);
 
 }
