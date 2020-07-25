@@ -25,6 +25,8 @@ void main(){
     printf("%d,%d",num1,num2);
     char charA;
     charA = getchar();
-    printf("%s",charA);
+    //printf("%s",charA); this is wrong 
+
+    int *p;
 
 }
