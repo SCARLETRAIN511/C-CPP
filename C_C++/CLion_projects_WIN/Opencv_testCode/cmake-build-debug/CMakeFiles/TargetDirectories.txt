@@ -1,3 +1,0 @@
-C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/Test_B/cmake-build-debug/CMakeFiles/Test_B.dir
-C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/Test_B/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects_B/Test_B/cmake-build-debug/CMakeFiles/rebuild_cache.dir

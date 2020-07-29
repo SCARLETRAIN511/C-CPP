@@ -1,3 +1,0 @@
-"D:\Clion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Test_B.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\Test_B.dir/objects.a @CMakeFiles\Test_B.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  -std=c++11 -g   -Wl,--whole-archive CMakeFiles\Test_B.dir/objects.a -Wl,--no-whole-archive  -o Test_B.exe -Wl,--out-implib,libTest_B.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Test_B.dir\linklibs.rsp
