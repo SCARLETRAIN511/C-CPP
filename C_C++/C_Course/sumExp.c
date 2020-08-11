@@ -11,9 +11,10 @@ int main() {
         result = 1;
         for (int j = 1;j<=i;j++){
             result = result * j;
-            e += 1.0/result;
         }
+        e += 1.0/result;
     }
+    
     printf("The approximation result is %f \n", e);
     return 0;
 }
