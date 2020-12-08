@@ -1,0 +1,3 @@
+C:/Users/msipc/Desktop/code/C-CPP/C_C++/CppCourses/MyTest1/cmake-build-debug/CMakeFiles/MyTest1.dir
+C:/Users/msipc/Desktop/code/C-CPP/C_C++/CppCourses/MyTest1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/msipc/Desktop/code/C-CPP/C_C++/CppCourses/MyTest1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
