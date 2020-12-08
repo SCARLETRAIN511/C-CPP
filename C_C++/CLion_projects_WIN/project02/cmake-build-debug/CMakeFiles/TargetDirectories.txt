@@ -1,3 +1,0 @@
-C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/project02/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/project02/cmake-build-debug/CMakeFiles/project02.dir
-C:/Users/tangj/Desktop/coding/C-C-/C_C++/CLion_projects/project02/cmake-build-debug/CMakeFiles/rebuild_cache.dir

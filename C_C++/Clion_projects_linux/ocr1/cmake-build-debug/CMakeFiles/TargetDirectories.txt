@@ -1,3 +1,0 @@
-/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/ocr1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/ocr1/cmake-build-debug/CMakeFiles/ocr1.dir
-/home/jt2418/Desktop/coding/C-C-/C_C++/Clion_projects_linux/ocr1/cmake-build-debug/CMakeFiles/edit_cache.dir
