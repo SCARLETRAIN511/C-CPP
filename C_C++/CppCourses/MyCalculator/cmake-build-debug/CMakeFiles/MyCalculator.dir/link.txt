@@ -1,0 +1,3 @@
+C:\Users\msipc\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\MyCalculator.dir/objects.a
+D:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe cr CMakeFiles\MyCalculator.dir/objects.a @CMakeFiles\MyCalculator.dir\objects1.rsp
+D:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\MyCalculator.dir/objects.a -Wl,--no-whole-archive  -o MyCalculator.exe -Wl,--out-implib,libMyCalculator.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MyCalculator.dir\linklibs.rsp

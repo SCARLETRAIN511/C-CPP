@@ -63,16 +63,16 @@ RM = C:\Users\msipc\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1
+CMAKE_SOURCE_DIR = C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MyTest1.dir/all
+all: CMakeFiles/MyCalculator.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MyTest1.dir/clean
+clean: CMakeFiles/MyCalculator.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyTest1.dir
+# Target rules for target CMakeFiles/MyCalculator.dir
 
 # All Build rule for target.
-CMakeFiles/MyTest1.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target MyTest1"
-.PHONY : CMakeFiles/MyTest1.dir/all
+CMakeFiles/MyCalculator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCalculator.dir\build.make CMakeFiles/MyCalculator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCalculator.dir\build.make CMakeFiles/MyCalculator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target MyCalculator"
+.PHONY : CMakeFiles/MyCalculator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MyTest1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1\cmake-build-debug\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MyTest1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/MyTest1.dir/rule
+CMakeFiles/MyCalculator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MyCalculator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/MyCalculator.dir/rule
 
 # Convenience name for target.
-MyTest1: CMakeFiles/MyTest1.dir/rule
+MyCalculator: CMakeFiles/MyCalculator.dir/rule
 
-.PHONY : MyTest1
+.PHONY : MyCalculator
 
 # clean rule for target.
-CMakeFiles/MyTest1.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/clean
-.PHONY : CMakeFiles/MyTest1.dir/clean
+CMakeFiles/MyCalculator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCalculator.dir\build.make CMakeFiles/MyCalculator.dir/clean
+.PHONY : CMakeFiles/MyCalculator.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

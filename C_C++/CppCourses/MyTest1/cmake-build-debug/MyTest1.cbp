@@ -83,6 +83,9 @@
 		<Unit filename="C:/Users/msipc/Desktop/code/C-CPP/C_C++/CppCourses/MyTest1/main.cpp">
 			<Option target="MyTest1"/>
 		</Unit>
+		<Unit filename="C:/Users/msipc/Desktop/code/C-CPP/C_C++/CppCourses/MyTest1/myCalculator.cpp">
+			<Option target="MyTest1"/>
+		</Unit>
 		<Unit filename="C:/Users/msipc/Desktop/code/C-CPP/C_C++/CppCourses/MyTest1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

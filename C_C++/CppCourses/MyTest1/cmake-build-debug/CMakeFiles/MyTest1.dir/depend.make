@@ -3,3 +3,5 @@
 
 CMakeFiles/MyTest1.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/MyTest1.dir/myCalculator.cpp.obj: ../myCalculator.cpp
+

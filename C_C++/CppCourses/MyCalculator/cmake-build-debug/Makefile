@@ -67,10 +67,10 @@ RM = C:\Users\msipc\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1
+CMAKE_SOURCE_DIR = C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1\cmake-build-debug\CMakeFiles C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator\cmake-build-debug\CMakeFiles C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyTest1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\msipc\Desktop\code\C-CPP\C_C++\CppCourses\MyCalculator\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyTest1
+# Target rules for targets named MyCalculator
 
 # Build rule for target.
-MyTest1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyTest1
-.PHONY : MyTest1
+MyCalculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyCalculator
+.PHONY : MyCalculator
 
 # fast build rule for target.
-MyTest1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/build
-.PHONY : MyTest1/fast
+MyCalculator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCalculator.dir\build.make CMakeFiles/MyCalculator.dir/build
+.PHONY : MyCalculator/fast
 
 main.obj: main.cpp.obj
 
@@ -148,7 +148,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCalculator.dir\build.make CMakeFiles/MyCalculator.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -157,7 +157,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCalculator.dir\build.make CMakeFiles/MyCalculator.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -166,35 +166,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyCalculator.dir\build.make CMakeFiles/MyCalculator.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-myCalculator.obj: myCalculator.cpp.obj
-
-.PHONY : myCalculator.obj
-
-# target to build an object file
-myCalculator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/myCalculator.cpp.obj
-.PHONY : myCalculator.cpp.obj
-
-myCalculator.i: myCalculator.cpp.i
-
-.PHONY : myCalculator.i
-
-# target to preprocess a source file
-myCalculator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/myCalculator.cpp.i
-.PHONY : myCalculator.cpp.i
-
-myCalculator.s: myCalculator.cpp.s
-
-.PHONY : myCalculator.s
-
-# target to generate assembly for a file
-myCalculator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyTest1.dir\build.make CMakeFiles/MyTest1.dir/myCalculator.cpp.s
-.PHONY : myCalculator.cpp.s
 
 # Help Target
 help:
@@ -204,13 +177,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... MyTest1
+	@echo ... MyCalculator
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... myCalculator.obj
-	@echo ... myCalculator.i
-	@echo ... myCalculator.s
 .PHONY : help
 
 
