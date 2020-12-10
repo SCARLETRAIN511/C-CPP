@@ -54,10 +54,15 @@ class Chef{
         }
 };
 
+//sub class
 class ItalianChef : public Chef{
     public:
         void makePasta(){
             cout << "The chef makes pasta" << endl;
+        }
+
+        void makeSpecialDish(){
+            cout << "The chef makes bbq" << endl;
         }
 };
 
@@ -71,10 +76,14 @@ int main(){
     cout << book1.getYear() << endl;
     cout << book1.gpa << endl;
     cout << book1.hasHonors() << endl;
+
     Chef chef1;
     chef1.makeChiken();
+    chef1.makeSpecialDish();
+    
     ItalianChef chef2;
-    chef2.makeChiken();
+    chef2.makeSpecialDish();
     chef2.makePasta();
+    
     return 0;
 }
