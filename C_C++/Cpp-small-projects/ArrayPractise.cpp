@@ -7,8 +7,22 @@ void sayHi(){
 }
 
 double cube(double num){
-    double result = num * num *num;
+    double result = num*num*num;
     return result;
+}
+
+void arrayOperation(){
+    int A[5];
+    A[1] = 10;
+    double B[] = {1.5,12.3,31.1,42.3214234,3.55};
+    for (int i = 0;i<5;i++){
+        cout << B[i] << endl;
+    }
+
+    char a1[] = {'A',66,'C',68};
+    for (int x:a1){
+        cout << x << endl; 
+    }
 }
 
 //boolean if practise
@@ -43,16 +57,9 @@ int main(){
     int luckyNums[20] = {1,2,331,42,13,83};
     luckyNums[1] = 14;
     luckyNums[19] = 2;
-    cout << luckyNums[25] << endl;
 
-    //call the functions
-    sayHi();
-    double answer = cube(5.0);
-    cout << answer << endl;
 
-    isMan();
-    int maxNum;
-    maxNum = getMax(1,5);
-    cout << maxNum << endl;
+    arrayOperation();
+
     return 0;
 }
