@@ -27,7 +27,12 @@ void pointerConstant(){
 	//p2 = &b; //err
 	*p2 = 222; //ok
     cout << *p2 << endl;
+}
 
+void pointerPractise2(){
+    char str1[3] = {"Hello","For","Goodbye"};
+    char *pstr1 = str1;
+    cout << *(pstr1+1) << endl;
 }
 
 void pointerArray(){
@@ -62,6 +67,17 @@ void pointerArray(){
 	printf("\n");
 }
 
+void pointer2Pointer(){
+    int a = 10;
+    int *pA = &a;
+    // this is a pointer that points a pointer
+    int **pA2 = &pA;
+    std::cout<<"pA:"<<pA<<std::endl<<"*p_a:"<<*pA<<std::endl;
+    std::cout<<std::endl;
+
+    std::cout<<"pA2:"<<pA2<<std::endl<<"*pA2:"<<*pA2<<std::endl<<"**pA2: "<<**pA2<<std::endl;
+}
+
 
 int main(){
     int x = 10;
@@ -81,7 +97,7 @@ int main(){
 
     /*
     delete []p2;
-    p = nullptr;
+    p2 = nullptr;
     */
 
     cout << p2[1] << endl;
@@ -104,4 +120,6 @@ int main(){
     pointerPoint1();
     pointerConstant();
     pointerArray();
+    pointerPractise2();
+    pointer2Pointer();
 }
