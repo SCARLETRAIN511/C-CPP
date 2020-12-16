@@ -29,10 +29,16 @@ void pointerConstant(){
     cout << *p2 << endl;
 }
 
+
 void pointerPractise2(){
-    char str1[3] = {"Hello","For","Goodbye"};
-    char *pstr1 = str1;
-    cout << *(pstr1+1) << endl;
+    char str1[3] = {'a','b','c'};
+    //数组指针，指向整个数组 所以储存数组的地址
+    char (*pstr1)[3] = &str1;
+
+    //指针 数组的名称即为0位变量的地址
+    char *pstr2 = str1;
+    cout << "*pstr1 = "<< (*pstr1)[0] << endl;
+    cout << "*pstr2 = "<< *(pstr2+1) << endl;
 }
 
 void pointerArray(){
