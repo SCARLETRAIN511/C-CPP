@@ -36,7 +36,20 @@ int main(){
     int xInt = 10;
     int *yPointer = &xInt;
     int * &zPointer = yPointer;
-    cout << "zPointer = "<<*zPointer<<endl; 
-    cout << "yPointer = "<<*yPointer << endl;
+    cout << "zPointer = "<< *zPointer << endl; 
+    cout << "yPointer = "<< *yPointer << endl;
 
 }
+
+
+class Solution{
+    public:
+    uint32_t reversebits(uint32_t num1){
+        uint32_t num2 = 0;
+        for (int i = 0;i<=31;i++){
+            num2 = num2 | ((num1>>(31-i)&1)<<i);
+        }
+        return num2;
+    }
+
+};
