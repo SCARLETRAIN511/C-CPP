@@ -30,10 +30,17 @@ void stringOp2(){
     string str2 = "World";
     str1.swap(str2);
     cout << str1 << endl;
-    
+}
+
+void stringOp3(){
+    string s = "Welcome";
+    char s1[10];
+    s.copy(s1,3);
+    s1[3] = '\0';
+    cout << s1<<endl;
 }
 
 int main(){
-    stringOp1();
-    stringOp2();
+    //stringOp1();
+    stringOp3();
 }
