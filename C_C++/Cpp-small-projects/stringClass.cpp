@@ -37,7 +37,7 @@ void stringOp3(){
     char s1[10];
     s.copy(s1,3);
     s1[3] = '\0';
-    cout << s1<<endl;
+    cout << s1 <<endl;
 }
 
 int main(){
