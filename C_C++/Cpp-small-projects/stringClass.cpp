@@ -40,7 +40,14 @@ void stringOp3(){
     cout << s1 <<endl;
 }
 
+
+void stringOp4(){
+    string str = "How are you";
+    cout << str.find("are");
+}
+
 int main(){
     //stringOp1();
     stringOp3();
+    stringOp4();
 }
