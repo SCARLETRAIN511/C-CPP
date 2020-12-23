@@ -43,11 +43,18 @@ void stringOp3(){
 
 void stringOp4(){
     string str = "How are you";
-    cout << str.find("are");
+    cout << str.find("are")<<endl;
+}
+
+void subString1(){
+    string str = "Programming";
+    string str2 = str.substr(2,5);
+    cout << str2 << endl;
 }
 
 int main(){
     //stringOp1();
     stringOp3();
     stringOp4();
+    subString1();
 }
