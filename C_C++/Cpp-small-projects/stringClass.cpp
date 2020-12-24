@@ -52,9 +52,23 @@ void subString1(){
     cout << str2 << endl;
 }
 
+void stringIter(){
+    string str = "Hello";
+    string::reverse_iterator it;
+    for (it = str.rbegin();it != str.rend();it++){
+        cout << *it <<endl;
+    }
+
+    //or str[i]!='\0'
+    for (int i=0;i<str.length();i++){
+        cout << str[i]<<endl;
+    }
+}
+
 int main(){
     //stringOp1();
-    stringOp3();
-    stringOp4();
-    subString1();
+    //stringOp3();
+    //stringOp4();
+    //subString1();
+    stringIter();
 }
