@@ -39,4 +39,8 @@ int main(){
     swapRef(a,b);
     cout << a << endl;
     cout << b <<endl;
+
+    int *p = new int[5];
+    p[1] = 3;
+    cout << p[1] << endl;
 }

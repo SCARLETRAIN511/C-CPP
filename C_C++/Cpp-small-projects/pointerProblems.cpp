@@ -18,7 +18,8 @@ int main(){
 
     int *pointerArr = new int[5];
     fun1(pointerArr);
-    cout << *(pointerArr+2) << endl;
+    cout << "pointerArr[1] = "<< pointerArr[1] << endl;
+    cout << "pointerArr[1] = "<< *(pointerArr+1) << endl;
 
     //Reference
     //l value is data, r value is the value the data stored
@@ -41,15 +42,3 @@ int main(){
 
 }
 
-
-class Solution{
-    public:
-    uint32_t reversebits(uint32_t num1){
-        uint32_t num2 = 0;
-        for (int i = 0;i<=31;i++){
-            num2 = num2 | ((num1>>(31-i)&1)<<i);
-        }
-        return num2;
-    }
-
-};
