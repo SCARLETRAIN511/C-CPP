@@ -30,6 +30,14 @@ void swapRef(int &a,int &b){
     b = temp;
 }
 
+int *fun1(int size){
+    int *p = new int[size];
+    for (int i = 0;i<size;i++){
+        p[i] = i+1;
+    }
+    return p;
+}
+
 int main(){
     cout << maxim(17.5f,14.4f) <<endl;
     cout << maxNum(17,3,188)<<endl;
@@ -43,4 +51,8 @@ int main(){
     int *p = new int[5];
     p[1] = 3;
     cout << p[1] << endl;
+
+    int *ptr = fun1(5);
+    cout <<*(ptr)<<endl;
+
 }
