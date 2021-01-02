@@ -22,14 +22,20 @@ int min(int x, int y){
 int main(){
     int A[] = {2,3,45,5,2,3};
     int x = search(A,6,5);
-    cout << x;
+    cout << "The index is "<<x << endl;
 
     //declare the function pointer
     int (*fp)(int,int);
     //assign the address            
     fp = max;
-    (*fp)(10,5);
+    int value0 = max(10,5);
+    int value1 = (*fp)(10,5);
+    cout << value0 << endl;
+    cout << value1 << endl;
 
     fp = min;
-    (*fp)(10,5);
+    //call the function pointer;
+    int value2 = (*fp)(10,5);
+    //int value3 = fp(10,5); also valid, but not informative
+    cout << value2 << endl;
 }
