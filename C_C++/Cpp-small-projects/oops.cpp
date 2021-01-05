@@ -21,4 +21,9 @@ int main(){
     r1.length = 10;
     r1.breadth =5;
 
-}
+    r2.length = 5;
+    r2.breadth = 2;
+    
+    cout << r1.perimeter()<<endl;
+    cout << r2.area() << endl;
+}   
