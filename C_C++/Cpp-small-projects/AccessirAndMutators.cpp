@@ -39,6 +39,7 @@ class Rectangle{
     }
 };
 
+
 int main(){
     Rectangle r1;
     r1.setBreadth(-5);
