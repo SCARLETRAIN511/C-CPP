@@ -7,6 +7,7 @@ class Rectangle{
     int breadth;
 
     public:
+    //mutators;
     void setLength(int l){
         if (l >= 0){
             length = l;
@@ -23,6 +24,7 @@ class Rectangle{
         }
     }
 
+    //Accsessors
     int getLength(){
         return length;
     }
