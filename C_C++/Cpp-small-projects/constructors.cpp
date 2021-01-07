@@ -7,30 +7,35 @@ class Rectangle{
         int breadth;
     
     public:
-        Rectangle(int l = 0,int b = 0){
+    //constructor
+        Rectangle(int l=0,int b=0){
             setLength(l);
-            setLength(b);
+            setBreadth(b);
+        }
+        Rectangle(Rectangle(&rect)){
+            length = rect.length;
+            breadth = rect.breadth;
         }
 
         void setLength(int l){
             length = l;
         }
-
         void setBreadth(int b){
             breadth = b;
-        }
-
-        Rectangle(Rectangle(&rect)){
-            length = rect.length;
-            breadth = rect. breadth;
-        }
+        }    
 
         int getLength(){
             return length;
         }
-
         int getBreadth(){
             return breadth;
+        }
+
+        int area(){
+            return length * breadth;
+        }
+        int perimeter(){
+            return 2*(length + breadth);
         }
 };
 
@@ -44,15 +49,17 @@ class Test{
     }
 
     Test(Test &t){
-        a = t*a;
+        a = t.a;
         p = new int[a];
     }
+
 };
 
 int main(){
+
     Rectangle r(10,5);
     Rectangle r2(r);
-    cout << r2.getBreadth()<<endl;
-    cout << r.getBreadth()<<endl; 
+    cout <<"The breadth of r2 is "<< r2.getBreadth()<<endl;
+    cout << "The area of r is "<<r.area()<<endl; 
 
 }
