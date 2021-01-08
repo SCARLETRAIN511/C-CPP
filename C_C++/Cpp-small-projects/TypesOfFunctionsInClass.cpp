@@ -31,7 +31,7 @@ Rectangle::Rectangle(){
 }
 Rectangle::Rectangle(int l,int b){
     setLength(l);
-    setLength(b);
+    setBreadth(b);
 }
 Rectangle::Rectangle(Rectangle &r){
     length = r.length;
@@ -50,11 +50,27 @@ void Rectangle::setBreadth(int b){
 void Rectangle::setLength(int l){
     length = l;
 }
-
+int Rectangle::area(){
+    return length * breadth;
+}
+int Rectangle::perimeter(){
+    return 2*(length + breadth);
+}
+bool Rectangle::isSquare(){
+    if (breadth == length){
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
 int main(){
-    Rectangle r1(19,5);
+    Rectangle r1(5,5);
     Rectangle r2(r1);
     cout << r1.getBreadth()<<endl;
     cout << r2.getBreadth()<<endl;
+    cout << r1.getLength()<<endl;
+    cout << r1.isSquare()<<endl;
 }
