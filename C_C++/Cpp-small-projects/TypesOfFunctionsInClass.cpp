@@ -20,7 +20,7 @@ class Rectangle{
         int area();
         int perimeter();
         //Enquiry;
-        int isSquare();
+        bool isSquare();
         //destructor function
         ~Rectangle();
 };
