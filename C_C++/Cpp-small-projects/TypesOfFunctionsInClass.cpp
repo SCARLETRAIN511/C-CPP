@@ -6,16 +6,21 @@ class Rectangle{
         int length;
         int breadth;
     public:
+    //constructor;
         Rectangle();
         Rectangle(int l,int b);
         Rectangle(Rectangle &r);
+        //mutators
         void setLength(int l);
         void setBreadth(int b);
+        //accessors
         int getLength();
         int getBreadth();
+        //facilitators
         int area();
         int perimeter();
-        int isSquare;
+        //Enquiry;
+        int isSquare();
         //destructor function
         ~Rectangle();
 };
