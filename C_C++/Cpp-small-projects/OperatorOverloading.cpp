@@ -79,6 +79,7 @@ int main(){
     cout << "Using friend function"<<endl;
     Complex2 n1(2,5);
     Complex2 n2(1,3);
+    //2 ways of using operator overload
     Complex2 n3 = n1 + n2;
     Complex2 n4 = operator+(n1,n2);
     cout << n4.getImg()<<endl;
