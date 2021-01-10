@@ -25,11 +25,17 @@ class Complex{
         void display(){
             cout << real <<"+i"<<img<<endl;
         }
+        friend ostream &operator<<(ostream &out,Complex &c);
 };
 
+ostream &operator<<(ostream &out,Complex &c){
+    out<<c.real<<"+i"<<c.img<<endl;
+	return out;
+}
+
 int main(){
-    Complex c1(3,7);
+    Complex c1(3,6);
     int x = 10;
-    c1.display();
+    cout << c1;
     cout << x<<endl;
 }
