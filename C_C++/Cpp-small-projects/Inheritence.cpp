@@ -28,6 +28,7 @@ class Rectangle{
             length = l;
             breadth = b;
         }
+        Rectangle(Rectangle &r);
         int getLength(){
             return length;
         }
@@ -51,6 +52,11 @@ class Rectangle{
             return length == breadth;
         }
 };
+
+Rectangle::Rectangle(Rectangle(&r)){
+    setLength(r.length);
+    setBreadth(r.breadth);
+}
 
 void useInheritence(){
     Derived d;
@@ -88,8 +94,10 @@ class Cuboid:public Rectangle{
 int main(){
     useInheritence();
 
-    Rectangle r(10,5);
+    Rectangle r(7,5);
+    Rectangle r1(r);
     cout << "The area of r is "<<r.area()<<endl;
+    cout << "The area of r1 is "<<r1.area()<<endl;
     Cuboid c1(2,3,5);
     cout << "The volume of c1 is "<<c1.volume()<<endl;
 }
