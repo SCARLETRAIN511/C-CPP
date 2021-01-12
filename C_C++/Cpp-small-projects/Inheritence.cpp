@@ -5,6 +5,13 @@ class Base{
     public:
     int x;
 
+    Base(){
+        cout << "The default of Base"<<endl;
+    }
+    Base(int x){
+        this ->x = x;
+        cout <<"The value of base "<<x<<endl;
+    }
     void show(){
         cout << x<<endl;
     }
@@ -13,6 +20,12 @@ class Base{
 class Derived:public Base{
     public:
     int y;
+    Derived(){
+        cout << "The default of derived"<<endl;
+    }
+    Derived(int a){
+        cout << "The value of derived "<<a<<endl;
+    }
     void display(){
         cout << x<<" "<<y<<endl;
     }
@@ -59,14 +72,22 @@ Rectangle::Rectangle(Rectangle(&r)){
 }
 
 void useInheritence(){
-    Derived d;
+    Derived d(5);
+    
     d.x = 1;
-    Base b;
-    b.x = 12;
-    b.show();
     d.y = 2;
+    cout << "display d all ";
     d.display();
+    cout << "show d.x(Same as b.x) ";
     d.show();
+    
+    
+    Base b(3);
+    
+    cout<<"show b.x ";
+    b.show();
+    
+    
 }
 
 class Cuboid:public Rectangle{
