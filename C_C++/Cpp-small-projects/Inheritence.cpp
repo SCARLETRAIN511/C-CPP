@@ -111,9 +111,15 @@ class Cuboid:public Rectangle{
         }
 };
 
+class Table{
+    public:
+    //has a relationship
+        Rectangle top;
+        int legs;
+};
 
 int main(){
-    useInheritence();
+    //useInheritence();
 
     Rectangle r(7,5);
     Rectangle r1(r);
