@@ -34,6 +34,20 @@ void Derived::fun5(){
     cout << "This is fun5"<<endl;
 }
 
+class Car{
+    public:
+    void start(){
+        cout <<"The car starts"<<endl;
+    }
+};
+
+class Limo:public Car{
+    public:
+    void music(){
+        cout <<"The car is playing music"<<endl;
+    }
+};
+
 int main(){
     Base *p;
     p = new Base();
@@ -44,5 +58,15 @@ int main(){
 
     Derived *p3 = new Derived();
     p3->fun4();
-    
+
+
+    Limo a;
+    a.start();
+    Car *ptr = &a;
+    ptr->start();
+    a.music();
+
+    //Car b;
+    //Limo *ptr2 = &b;
+    //can not do like this
 }
