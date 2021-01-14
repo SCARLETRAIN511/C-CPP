@@ -19,12 +19,12 @@ class Derived:public Base{
         Derived(int y):Base(y){
             cout <<"Param of Derived"<<y<<endl;
         }
-        Derived(int x,int y):Base(x){
+        Derived(int x,int y){
             cout << "Param of Deriverd"<<y<<endl;
         }
 };
 
 
 int main(){
-    Derived d(2);
+    Derived d(2,5);
 }
