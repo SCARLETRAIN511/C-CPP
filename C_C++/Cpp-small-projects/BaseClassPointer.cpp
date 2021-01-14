@@ -61,12 +61,21 @@ int main(){
 
 
     Limo a;
+    cout <<"car a operations: ";
     a.start();
+
     Car *ptr = &a;
+    cout<<"ptr operations: ";
     ptr->start();
+    
+    cout<<"Car a operations: ";
     a.music();
+
+    Car *car2 = new Limo;
+    cout << "Car2 operations :";
+    car2->start();
 
     //Car b;
     //Limo *ptr2 = &b;
-    //can not do like this
+    //can not do this
 }
