@@ -44,7 +44,10 @@ class Car{
 
     virtual void stop(){
         cout << "The car stops"<<endl;
+        //virtual function, can also delete the body;
     }
+    virtual void run()=0;
+    //This is a purely virtual function;
 };
 
 class Innova:public Car{
@@ -54,6 +57,9 @@ class Innova:public Car{
     }
     void stop(){
         cout <<"The innova stops"<<endl;
+    }
+    void run(){
+        cout << "The innova runs"<<endl;
     }
 };
 
@@ -65,6 +71,9 @@ class Swist:public Car{
 
     void stop(){
         cout <<"The Swist stops"<<endl;
+    }
+    void run(){
+        cout <<"The Swist runs"<<endl;
     }
 };
 
@@ -81,6 +90,10 @@ int main(){
     p->display(5);
 
     cout <<"<-------------------runtime polymorphism----------------->"<<endl;
-
+    Car *c = new Innova();
+    c->start();
+    c = new Swist();
+    c->start();
+    c->run();
 
 }
