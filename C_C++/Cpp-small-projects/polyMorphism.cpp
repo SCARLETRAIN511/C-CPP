@@ -2,25 +2,47 @@
 using namespace std;
 
 class Parent{
+    private:
+    int age;
+    string name;
+
     public:
+    Parent(){
+        cout <<"No param for Parent"<<endl;
+    }    
+    Parent(int x, string y){
+        age = x;
+        name = y;
+    }
+
     virtual void display(int x){
-        cout << "display the parent"<<x<<endl;
+        cout << "display the parent:"<<x<<endl;
     }
 };
 
 class Child:public Parent{
+    private:
+    int score;
     public:
+    Child():Parent(){
+        cout <<"No param for Child"<<endl;
+    } 
+    Child(int num){
+        score = num;
+        cout << "The score is "<<score <<endl;
+    }
     void display(int y){
-        cout << "display the child"<<y<<endl;
+        cout << "display the child:"<<y<<endl;
     }
 };
 
 class Car{
     public:
-    void start(){
+    virtual void start(){
         cout << "The car starts"<<endl;
     }
-    void stop(){
+
+    virtual void stop(){
         cout << "The car stops"<<endl;
     }
 };
@@ -47,15 +69,18 @@ class Swist:public Car{
 };
 
 int main(){
+    cout <<"<------------------Using c1 now-------------------->"<<endl;
     Child c1;
     c1.display(3);
     c1.Parent::display(4);
 
+    cout <<"<------------------Using *p now-------------------->"<<endl;
     //virtual function practise
+    //The is the base class object
     Parent *p = new Child;
     p->display(5);
 
-    cout <<"<<--------------runtime polymorphism----------------->>"<<endl;
+    cout <<"<-------------------runtime polymorphism----------------->"<<endl;
 
-    
+
 }
