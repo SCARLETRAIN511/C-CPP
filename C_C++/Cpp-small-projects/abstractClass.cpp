@@ -2,6 +2,8 @@
 using namespace std;
 
 //exercise for abstract class
+//Class with functions all virtual, polymorphism->only usage, can be called interface
+//Can also called abstract class.
 class Base{
     public:
     virtual void fun1(){
@@ -23,5 +25,7 @@ class Derived:public Base{
 };
 
 int main(){
-
+    Base *p = new Derived;
+    p->fun1();
+    p->fun2();
 }
