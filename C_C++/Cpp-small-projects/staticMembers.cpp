@@ -33,6 +33,23 @@ class Innova{
 
 int Innova::price = 10;
 
+class Student{
+    public:
+        int roll;
+        string name;
+        static int addNo;
+        Student(string n){
+            name = n;
+            addNo ++;
+            roll = addNo;
+        }
+        void display(){
+            cout <<"Roll is "<<roll<<" Name is "<<name<<endl;
+        }
+};
+int Student::addNo = 0;
+
+
 int main(){
 
     Test t1;
@@ -41,7 +58,15 @@ int main(){
     cout << t1.count<<endl;
     cout << t1.getCount()<<endl;
     cout << Test::getCount()<<endl;
+    cout << Test::count<<endl;
     cout << t2.getCount()<<endl;
 
-    cout<< "The price of innova is "<<Innova::getPrice()<<endl;
+    cout<< "The price of innova is "<<Innova::getPrice()<<endl;\
+
+    Student s1("John");
+    Student s2("Kath");
+    s1.display();
+    s2.display();
+    cout <<"Totol roll is "<<Student::addNo<<endl;
+
 }
