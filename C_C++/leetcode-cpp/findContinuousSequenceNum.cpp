@@ -37,6 +37,7 @@ class Solution{
 
     bool compare(){
         vector<int> num = {1,2,3};
+        //与有符号数比较，-3 转为无符号数
         return num.size() < -3;
     }
 };
