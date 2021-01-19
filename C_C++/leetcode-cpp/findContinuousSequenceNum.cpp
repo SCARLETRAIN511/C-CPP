@@ -34,6 +34,11 @@ class Solution{
         }
         return vec;
     }
+
+    bool compare(){
+        vector<int> num = {1,2,3};
+        return num.size() < -3;
+    }
 };
 
 int main(){
@@ -46,4 +51,5 @@ int main(){
         }
         cout << endl;
     }
+    cout << s.compare()<<endl;
 }
