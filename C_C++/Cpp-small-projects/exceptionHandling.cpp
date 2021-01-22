@@ -1,10 +1,14 @@
 #include <iostream>
 using namespace std;
 
+class MyException:public exception{
+
+};
+
 //error: Syntax, logic error, runtime error
-int division(int a,int b){
+int division(int a,int b)throw(int){
     if (b == 0){
-        throw 2;
+        throw 1;
     }
     return a/b;
 }
@@ -14,8 +18,8 @@ int main(){
     try{
         c = division(a,b);
         cout << c;
-    }catch(int e){
-        cout << "Divison by zero"<<e;
+    }catch(int m){
+        cout << "Divison by zero "<<m;
     }
     cout << "Bye";
 
