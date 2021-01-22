@@ -14,8 +14,7 @@ int main(){
 
     int z = 3;
     ptr2 = &z;
-    int *const ptr3 = &z;//pointer is constant, can not point to another value
-    z ++;
+    int *const ptr3 = &z;//pointer is constant, can not point to another value, can not be modified as well
 
     cout << x<< endl;
     cout << *ptr3<<endl;
