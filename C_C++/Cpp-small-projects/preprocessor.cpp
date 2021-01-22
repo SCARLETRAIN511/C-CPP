@@ -14,5 +14,4 @@ int main(){
     cout <<PI<<endl;
     cout << SRR(5)<<endl;
     cout << max(12,5)<<endl;
-    cout <<msg(hhhh)<<endl;
 }
