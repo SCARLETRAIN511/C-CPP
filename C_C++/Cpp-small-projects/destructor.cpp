@@ -26,4 +26,6 @@ void fun(){
 
 int main(){
     fun();
+    Test t;
+    Test *p = new Test();
 }
