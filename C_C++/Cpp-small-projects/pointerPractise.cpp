@@ -37,8 +37,12 @@ void pointerPractise2(){
 
     //指针 数组的名称即为0位变量的地址
     char *pstr2 = str1;
-    cout << "*pstr1 = "<< (*pstr1)[0] << endl;
-    cout << "*pstr2 = "<< *(pstr2+1) << endl;
+
+    //cout << "*(pstr1+1) = "<< *(pstr1+0) << endl; can not do like this
+    cout << "(*pstr1)[1] = "<< (*pstr1)[1] << endl;
+    cout << "*(pstr2+1) = "<< *(pstr2+1) << endl;
+    cout <<" pstr2[1] = "<<pstr2[1]<<endl;
+    cout <<"*(str1 + 1)= " <<*(str1+1)<<endl;
 }
 
 void pointerArray(){
@@ -85,11 +89,12 @@ void pointer2Pointer(){
 
 
 int main(){
-    int x = 10;
+    /*int x = 10;
     int *p = &x;
     *p = 20;
     x = 30;
     cout <<"p is " <<*p << endl;
+    */
 
     int A[5] = {1,2,3,4,5};
     A[2] = 12;
@@ -123,9 +128,9 @@ int main(){
     cout << "p3 pointer to a new value ,p3 is "<<p3 << endl;
 
 
-    pointerPoint1();
+    //pointerPoint1();
     pointerConstant();
     pointerArray();
     pointerPractise2();
-    pointer2Pointer();
+    //pointer2Pointer();
 }
