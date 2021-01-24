@@ -9,5 +9,16 @@ int main(int argc, const char** argv) {
     ofs<<"cs"<<endl;
     ofs.close();
 
+    ifstream infile;
+    infile.open("C:\\Users\\msipc\\Desktop\\code\\C-CPP\\C_C++\\Cpp-small-projects\\My.txt");
+    if (!infile){
+        cout <<"file can not open"<<endl;
+    }
+    string str;
+    int x;
+    infile >> str;
+    infile >> x;
+    cout <<str<<x<<endl;
+    infile.close();
     return 0;
 }
