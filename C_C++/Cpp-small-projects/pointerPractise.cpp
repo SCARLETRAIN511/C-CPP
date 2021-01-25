@@ -38,7 +38,7 @@ void pointerPractise2(){
     //指针 数组的名称即为0位变量的地址
     char *pstr2 = str1;
 
-    //cout << "*(pstr1+1) = "<< *(pstr1+0) << endl; can not do like this
+    //cout << "*(pstr1+1) = "<< *(pstr1+1) << endl; can not do like this
     cout << "(*pstr1)[1] = "<< (*pstr1)[1] << endl;
     cout << "*(pstr2+1) = "<< *(pstr2+1) << endl;
     cout <<" pstr2[1] = "<<pstr2[1]<<endl;
