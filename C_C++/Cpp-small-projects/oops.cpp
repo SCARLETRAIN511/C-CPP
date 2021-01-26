@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 using namespace std;
 
 class Rectangle{
@@ -7,6 +8,15 @@ class Rectangle{
     int breadth;
     
     public:
+    Rectangle() = default;
+    Rectangle(int x,int y){
+        length = x;
+        breadth = y;
+    }
+    Rectangle(Rectangle &rect){
+        length = rect.length;
+        breadth = rect.breadth;
+    }
     int area(){
         return length * breadth;
     }
@@ -15,6 +25,16 @@ class Rectangle{
         return 2 * (length + breadth);
     }
 };
+
+void fun1(){
+    Rectangle *p = new Rectangle();
+    delete p;
+    //unique_ptr, the object only has one pointer
+    /*
+    *share_ptr
+    * weak_ptr
+    */
+}
 
 int main(){
     Rectangle r1,r2;
@@ -51,4 +71,24 @@ int main(){
     p2 ->length = 3;
     p2 -> breadth = 2;
     cout << "The area of p2 is " << p2->area() <<endl;
+
+    unique_ptr<Rectangle> p3(new Rectangle(10,5));
+    cout << p3->area()<<endl;
+    cout << p3->perimeter()<<endl;
+
+    unique_ptr<Rectangle> p4;
+    p4 = move(p3);
+    cout << p4->area()<<endl;
+    cout << p4->perimeter()<<endl;
+
+    shared_ptr<Rectangle> p5(new Rectangle(2,4));
+    shared_ptr<Rectangle> p6;
+    cout << p5->area()<<endl;
+    cout << p5->perimeter()<<endl;
+
+    p6 = p5;
+    cout << p6->area()<<endl;
+    cout << p6->perimeter()<<endl;
+    cout << p6.use_count()<<endl;
+
 }   
