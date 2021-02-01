@@ -20,4 +20,9 @@ int main(){
     c.color = 0;
     struct Card d = {1,2,3};
     cout << d.color<<endl;
+    
+    //pointer to structure
+    struct Rectangle *p1 = &r;
+    cout << p1->breadth<<endl;
+    cout <<(*p1).breadth<<endl;
 }
