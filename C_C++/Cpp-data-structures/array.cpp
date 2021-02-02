@@ -18,6 +18,15 @@ void fun(int A[]){
     A[0] = 10;
 }
 
+int *creatArr(int size){
+    int *p;
+    p = new int[size];
+    for (int i = 0;i<size;i++){
+        p[i] = i+2;
+    }
+    return p;
+}
+
 int main(){
     struct Rectangle r = {1,3};
     struct Card c;
@@ -38,7 +47,13 @@ int main(){
     for (int x:A){
         cout << x<<endl;
     }
-
+    //change the array
     fun(A);
     cout << A[0]<<endl;
+
+    cout <<"------------create array----------------"<<endl;
+    int *p = creatArr(5);
+    for (int i = 0;i<5;i++){
+        cout << p[i]<<endl;
+    }
 }
