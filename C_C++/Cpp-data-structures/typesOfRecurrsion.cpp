@@ -38,6 +38,23 @@ int fun4(int n){
     }
 }
 
+//sum of first n
+int firstN(int n){
+    if (n<=0){
+        return 0;
+    }else{
+        return firstN(n-1)+n;
+    }
+}
+
+//factorial using recursion
+int factorial(int n){
+    if (n<=1){
+        return 1;
+    }else{
+        return n*factorial(n-1);
+    }
+}
 
 int main(){
     cout <<"Tail recursion"<<endl;
@@ -49,5 +66,10 @@ int main(){
 
     cout <<"Nested recursion"<<endl;
     //cout<<fun4(95)<<endl;
+
+    cout <<"Sum of first n function"<<endl;
+    cout << firstN(4)<<endl;
+
+    cout << "The factorial of 5 is "<<factorial(5)<<endl;
 
 }
