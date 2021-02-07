@@ -56,6 +56,14 @@ int factorial(int n){
     }
 }
 
+//power using recursion
+int power(int m,int n){
+    if (n==0){
+        return 1;
+    }
+    return power(m,n-1)*m;
+}
+
 int main(){
     cout <<"Tail recursion"<<endl;
     fun1(5);
@@ -71,5 +79,6 @@ int main(){
     cout << firstN(4)<<endl;
 
     cout << "The factorial of 5 is "<<factorial(5)<<endl;
+    cout <<"5 power 5 is "<<power(5,5)<<endl;
 
 }
