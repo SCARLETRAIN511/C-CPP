@@ -59,5 +59,4 @@ int main(){
     cout <<endl;
     cout << "The element deleted is "<<a.deleteElement(2)<<endl;
     a.display();
-
 }
