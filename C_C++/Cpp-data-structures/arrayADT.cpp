@@ -45,6 +45,25 @@ class Array{
             }
             return 0;
         }
+
+        void swap(int &a,int &b){
+            int temp;
+            temp = b;
+            b = a;
+            a = temp;
+        }
+
+        int linearSearch(int key){
+            //return the index or 0
+            for (int i = 0;i<length;i++){
+                if (key == A[i]){
+                    swap(A[i],A[i-1]);
+                    return i;
+                }
+            }
+            return -1;
+        }
+
 };
 
 int main(){
@@ -59,4 +78,6 @@ int main(){
     cout <<endl;
     cout << "The element deleted is "<<a.deleteElement(2)<<endl;
     a.display();
+
+    cout <<"The index of 199 is "<<a.linearSearch(100)<<endl;
 }
