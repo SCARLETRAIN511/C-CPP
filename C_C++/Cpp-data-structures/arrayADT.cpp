@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//implemention of array using adt
 class Array{
     public:
         int A[10];
@@ -96,7 +97,31 @@ class Array{
             return -1;
 
         }
+
+        void set(int index,int x){
+            if (index >=0 && index <length){
+                A[index] = x;
+            }
+        }
+
+        int get(int index){
+            if (index >=0 && index < length){
+                return A[index];
+            }
+            return -1;
+        }
+
+        int Max(){
+            int max = A[0];
+            for (int i = 0;i<length;i++){
+                if (A[i]>max){
+                    max = A[i];
+                }
+                return max
+            } 
+        }
     };
+
 
 int main(){
     Array a;
