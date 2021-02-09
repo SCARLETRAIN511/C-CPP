@@ -63,8 +63,40 @@ class Array{
             }
             return -1;
         }
+        
+        int binarySearch(int key){
+            int l,mid,h;
+            l = 0;
+            h = length - 1;
+            while (l<=h){
+                mid = (l+h)/2;
+                if (key == A[mid]){
+                    return mid;
+                }else if(key < A[mid]){
+                    h = mid - 1;
+                }else{
+                    l = mid + 1;
+                }
+            }
+            return -1;
+        }
 
-};
+        int RBinarySearch(int key,int l,int h){
+            int mid;
+            if (l<=h){
+                mid = (l+h)/2;
+                if (key == A[mid]){
+                    return mid;
+                }else if (key < A[mid]){
+                    return RBinarySearch(key,l,mid-1);
+                }else{
+                    return RBinarySearch(key,mid+1,h);
+                }
+            }
+            return -1;
+
+        }
+    };
 
 int main(){
     Array a;
@@ -73,11 +105,12 @@ int main(){
     a.display();
 
     a.append(199);
-    a.insert(3,100);
     a.display();
     cout <<endl;
     cout << "The element deleted is "<<a.deleteElement(2)<<endl;
     a.display();
 
-    cout <<"The index of 199 is "<<a.linearSearch(100)<<endl;
+    cout <<"The index of 100 is "<<a.linearSearch(100)<<endl;
+    cout <<"The index of 5 is "<<a.binarySearch(5)<<endl;
+    cout <<"The index of 4 is "<<a.RBinarySearch(4,0,a.length)<<endl;
 }
