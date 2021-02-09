@@ -120,6 +120,28 @@ class Array{
                 return max;
             } 
         }
+
+        int Min(){
+            int min = A[0];
+            for (int i = 0;i<length;i++){
+                if (A[i]<min){
+                    min = A[i];
+                }
+                return min;
+            } 
+        }
+        
+        int Sum(){
+            int sum = 0;
+            for (int i = 0;i<length;i++){
+                sum += A[i];
+            }
+            return sum;
+        }
+
+        float Avg(){
+            return (float)Sum()/length;
+        }
     };
 
 
