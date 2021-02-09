@@ -117,7 +117,7 @@ class Array{
                 if (A[i]>max){
                     max = A[i];
                 }
-                return max
+                return max;
             } 
         }
     };
