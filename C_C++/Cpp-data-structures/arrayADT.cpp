@@ -153,6 +153,29 @@ class Array{
         }
         //left shift and right shift method
 
+        //check sorted or not
+        bool isSorted(){
+            for (int i = 1;i<length;i++){
+                if (A[i]>A[i-1]){
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        void insertSort(int x){
+            int i = length - 1;
+            if (length == size){
+                return;
+            }
+            while (i>=0 && A[i] > x){
+                A[i+1] = A[i];
+                i--;
+            }
+            A[i+1] = x;
+            length ++;
+        }
+
     };
 
 
@@ -173,5 +196,8 @@ int main(){
     cout <<"The index of 4 is "<<a.RBinarySearch(4,0,a.length)<<endl;
 
     a.reverse();
+    a.display();
+    a.reverse();
+    a.insertSort(6);
     a.display();
 }
