@@ -154,13 +154,13 @@ class Array{
         //left shift and right shift method
 
         //check sorted or not
-        bool isSorted(){
+        int isSorted(){
             for (int i = 1;i<length;i++){
                 if (A[i]>A[i-1]){
-                    return false;
+                    return 0;
                 }
             }
-            return true;
+            return 1;
         }
 
         void insertSort(int x){
@@ -174,6 +174,44 @@ class Array{
             }
             A[i+1] = x;
             length ++;
+        }
+
+        void rearrange(){
+            int i,j;
+            i = 0;
+            j = length - 1;
+            while (i<j){
+                while (A[i]<0) {i++;}
+                while (A[i]>=0) {j--;}
+                if (i<j){
+                    swap(&A[i],&A[j]);
+                }
+            }
+        }
+
+        //Merge 2 sorted arrays;
+        int *merge(int B[]){
+            int i,j;
+            int k = 0;
+            i=0;
+            j=0;
+            int length2 = 5;
+            int *C = new int[length + length2];
+            while (i<length && j<length2){
+                if (A[i]<B[j]){
+                    C[k++] = A[i++];
+                }else{
+                    C[k++] = B[j++];
+                }
+            }
+            for (;i<length;i++){
+                C[k++] = A[i++];
+            }
+            for (;j<length2;j++){
+                C[k++] = B[j++];
+            }
+            return C;
+            //same as return &C[0];
         }
 
     };
@@ -200,4 +238,12 @@ int main(){
     a.reverse();
     a.insertSort(6);
     a.display();
+
+    int arr1[5] = {2,3,4,6,10};
+    int *arr2 = a.merge(arr1);
+    cout << endl;
+    cout << "Merging"<<endl;
+    for (int i = 0;i<5+a.length;i++){
+        cout << arr2[i]<<" ";
+    }
 }
