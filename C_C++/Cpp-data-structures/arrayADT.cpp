@@ -47,18 +47,18 @@ class Array{
             return 0;
         }
 
-        void swap(int &a,int &b){
+        void swap(int *a,int *b){
             int temp;
-            temp = b;
-            b = a;
-            a = temp;
+            temp = *b;
+            *b = *a;
+            *a = temp;
         }
 
         int linearSearch(int key){
             //return the index or 0
             for (int i = 0;i<length;i++){
                 if (key == A[i]){
-                    swap(A[i],A[i-1]);
+                    swap(&A[i],&A[i-1]);
                     return i;
                 }
             }
@@ -142,6 +142,17 @@ class Array{
         float Avg(){
             return (float)Sum()/length;
         }
+
+        //reverse method
+        void reverse(){
+            int i,j;
+            int *B = new int[length];
+            for (i=0;i<length/2;i++){
+                swap(&A[i],&A[length-i-1]);
+            }
+        }
+        //left shift and right shift method
+
     };
 
 
@@ -160,4 +171,7 @@ int main(){
     cout <<"The index of 100 is "<<a.linearSearch(100)<<endl;
     cout <<"The index of 5 is "<<a.binarySearch(5)<<endl;
     cout <<"The index of 4 is "<<a.RBinarySearch(4,0,a.length)<<endl;
+
+    a.reverse();
+    a.display();
 }
