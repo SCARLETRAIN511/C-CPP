@@ -243,6 +243,67 @@ class Array{
         }
     };
 
+//Array class 2;
+template<class T>
+class Array2
+{
+    private:
+        T *A;
+        int size;
+        int length;
+public:
+    Array2()
+    {
+        size=10;
+        A=new T[10];
+        length=0;
+    }
+    Array2(int sz)
+    {
+        size=sz;
+        length=0;
+        A=new T[size];
+    }
+    ~Array2()
+    {
+        delete []A;
+    }
+    void Display();
+    void Insert(int index,T x);
+    T Delete(int index);
+};
+template<class T>
+void Array2<T>::Display()
+{
+    for(int i=0;i<length;i++)
+    cout<<A[i]<<" ";
+    cout<<endl;
+}
+template<class T>
+void Array2<T>::Insert(int index,T x)
+{
+    if(index>=0 && index<=length)
+    {
+    for(int i=length-1;i>=index;i--)
+        A[i+1]=A[i];
+        A[index]=x;
+        length++;
+    }
+}
+template<class T>
+T Array2<T>::Delete(int index)
+{
+    T x=0;
+    if(index>=0 && index<length)
+    {
+    x=A[index];
+    for(int i=index;i<length-1;i++)
+        A[i]=A[i+1];
+        length--;
+    }
+    return x;
+}
+
 
 int main(){
     Array a;
