@@ -214,6 +214,33 @@ class Array{
             //same as return &C[0];
         }
 
+        //union operations
+        int *Union(int B[]){
+            int i,j;
+            int k = 0;
+            i=0;
+            j=0;
+            int length2 = 5;
+            int *C = new int[length + length2];
+            while (i<length && j<length2){
+                if (A[i]<B[j]){
+                    C[k++] = A[i++];
+                }else if(B[j]<A[i]){
+                    C[k++] = B[j++];
+                }else{
+                    C[k++]=A[i++];
+                    j++;
+                }
+            }
+            for (;i<length;i++){
+                C[k++] = A[i++];
+            }
+            for (;j<length2;j++){
+                C[k++] = B[j++];
+            }
+            return C;
+            //same as return &C[0];
+        }
     };
 
 
