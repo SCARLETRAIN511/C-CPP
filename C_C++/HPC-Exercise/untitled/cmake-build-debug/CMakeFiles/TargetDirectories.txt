@@ -1,3 +1,0 @@
-C:/Users/msipc/Desktop/code/C-CPP/C_C++/HPC-Exercise/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/msipc/Desktop/code/C-CPP/C_C++/HPC-Exercise/untitled/cmake-build-debug/CMakeFiles/untitled.dir
-C:/Users/msipc/Desktop/code/C-CPP/C_C++/HPC-Exercise/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
