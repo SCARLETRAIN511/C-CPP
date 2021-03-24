@@ -118,11 +118,17 @@ int main(){
     cin >> size;
     //int A[size];
     int *p3 = new int[size];
+    p3[0] = 1;
+    p3[1] = 2;
+    p3[2] = 3;
+    cout <<"p3[2] = " <<*(p3+1) <<endl;
     cout << "Pointer  p3 is "<<p3 << endl;
 
     delete []p3;
     cout<< "Delete []p3"<<endl;
     p3 = NULL;
+
+    //enter the new size
     cout << "Enter the new size";
     cin >> size;
     p3 = new int[size];
