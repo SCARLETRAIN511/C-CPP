@@ -31,6 +31,6 @@ int main(){
     x.c = 50;
     Derived y;
     y.funBase();
-    y.funDerived();
+    //y.funDerived();
     cout << y.c<<endl;
 }

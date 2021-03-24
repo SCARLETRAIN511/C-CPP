@@ -19,6 +19,7 @@ void fun(){
     //only the constructor will be called
     Test *p = new Test();
     delete p;
+    p = NULL;
 
     Test t;
 
