@@ -122,6 +122,7 @@ int main(){
 
     delete []p3;
     cout<< "Delete []p3"<<endl;
+    p3 = NULL;
     cout << "Enter the new size";
     cin >> size;
     p3 = new int[size];
