@@ -21,5 +21,4 @@ int main(){
     cout << page << endl;
 
     return 0;
-
 }
